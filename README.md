@@ -17,3 +17,15 @@ He creado el jenkinsfile el cual pide datos en una stage y los guarda en variabl
 <img src='./img/Screenshot_20230203_182716.png' />
 <img src='./img/Screenshot_20230203_175557.png' />
 <img src='./img/Screenshot_20230203_175705.png' />
+
+# Build Monitor View
+
+He instalado el plugin.
+
+<img src='./img/Screenshot_20230203_182953.png' />
+
+He creado la vista indicandole el job el cual debe de monitorizar.
+
+<img src='./img/Screenshot_20230203_183455.png' />
+<img src='./img/Screenshot_20230203_183523.png' />
+<img src='./img/Screenshot_20230203_183542.png' />
