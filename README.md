@@ -32,7 +32,6 @@ He creado la vista indicandole el job el cual debe de monitorizar.
 
 # Linter
 
-
 Para poder utilizar eslint he instalado y configuradl el plugin de nodejs. De esta forma se ouede utilizar node como tool en el jenkinsfile
 
 <img src='./img/Screenshot_20230203_184105.png' />
@@ -49,3 +48,8 @@ He modificado el fichero Jenkinsfile añadiendo la tool y dos stages una para in
 
 <img src='./img/Screenshot_20230203_184440.png' />
 <img src='./img/Screenshot_20230203_184426.png' />
+
+# Test
+
+He añadido el stage de jest al Jenkinsfile.
+
