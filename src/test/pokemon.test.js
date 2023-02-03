@@ -1,6 +1,7 @@
 import { get_pokemon } from "../utils/utils";
-import {jest} from '@jest/globals';
+import { expect, test } from '@jest/globals';
 
-test('ditto', () => {
-    expect(get_pokemon(132)).toBe('ditto');
+
+test('ditto', async () => {
+    expect(await get_pokemon(132)).toBe('ditto');
 });
