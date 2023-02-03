@@ -29,3 +29,23 @@ He creado la vista indicandole el job el cual debe de monitorizar.
 <img src='./img/Screenshot_20230203_183455.png' />
 <img src='./img/Screenshot_20230203_183523.png' />
 <img src='./img/Screenshot_20230203_183542.png' />
+
+# Linter
+
+
+Para poder utilizar eslint he instalado y configuradl el plugin de nodejs. De esta forma se ouede utilizar node como tool en el jenkinsfile
+
+<img src='./img/Screenshot_20230203_184105.png' />
+
+He configurado el eslint
+
+<img src='./img/Screenshot_20230203_183824.png' />
+
+Comando que ejecuta es eslint.
+
+<img src='./img/Screenshot_20230203_183844.png' />
+
+He modificado el fichero Jenkinsfile añadiendo la tool y dos stages una para instalar las dependencias de node y otro para ejecutar el eslint.
+
+<img src='./img/Screenshot_20230203_184440.png' />
+<img src='./img/Screenshot_20230203_184426.png' />

@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs '19.6.0'
+    }
     stages {
         stage('Petición de datos') {
             steps {
@@ -17,9 +20,16 @@ pipeline {
                                           description: '',
                                           name: 'correo')]
                 }
-                echo "${env.EJECUTOR}"
-                echo "${env.MOTIVO}"
-                echo "${env.CORREO}"
+            }
+        }
+        stage('Node install') {
+            steps {
+                sh 'npm install -D'
+            }
+        }
+        stage('Linter') {
+            steps {
+                sh 'npm run lint'
             }
         }
     }
