@@ -3,6 +3,9 @@
     "rules": {
         "CompileStatic": {
             "enabled": false
+        },
+        "LineLength": {
+            "enabled": false
         }
     }
 }
