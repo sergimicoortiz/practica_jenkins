@@ -51,5 +51,21 @@ He modificado el fichero Jenkinsfile añadiendo la tool y dos stages una para in
 
 # Test
 
-He añadido el stage de jest al Jenkinsfile.
+He creado los tests de jest.
 
+<img src='./img/Captura de pantalla 2023-02-04 150535.png' />
+<img src='./img/Captura de pantalla 2023-02-04 150549.png' />
+
+Para poder utilizar jest con imports he tenido que instalar babel y realizar algunas configuraciónes.
+
+**package.json**
+
+<img src='./img/Captura de pantalla 2023-02-04 150851.png' />
+
+**babel.config.json**
+
+<img src='./img/Captura de pantalla 2023-02-04 150900.png' />
+
+He modificado el Jenkinsfile
+
+<img src='./img/Screenshot_20230203_185451.png' />
