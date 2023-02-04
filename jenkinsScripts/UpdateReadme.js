@@ -16,3 +16,4 @@ const fs = require('fs/promises');
 // }
 
 console.log(process.argv[2]);
+//0 OK
