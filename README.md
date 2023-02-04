@@ -81,10 +81,14 @@ He modificado el Jenkinsfile
 # Update_Readme
 
 He modificado el Jenkinsfile
-
+<img src='./img/Captura de pantalla 2023-02-04 163615.png' />
+<img src='./img/Captura de pantalla 2023-02-04 163505.png' />
 
 ### RESULTADO DE LOS ÚLTIMOS TESTS:
 <img src='https://img.shields.io/badge/test-failure-reds' />
 
 
 # Push_Changes
+
+He modificado el Jenkinsfile
+<img src='./img/Captura de pantalla 2023-02-04 163621.png' />
