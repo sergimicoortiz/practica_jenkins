@@ -6,4 +6,6 @@ git config --global user.email "sergimicoortiz@gmail.com"
 # git commit -m "$COMMIT_MSG"
 # git push origin master
 git remote
+git branch -a
+git status
 exit 0

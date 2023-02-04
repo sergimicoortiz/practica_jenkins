@@ -84,6 +84,9 @@ He modificado el Jenkinsfile
 <img src='./img/Captura de pantalla 2023-02-04 163615.png' />
 <img src='./img/Captura de pantalla 2023-02-04 163505.png' />
 
+Script que realiza los cambios en el README
+<img src='./img/Captura de pantalla 2023-02-04 164016.png' />
+
 ### RESULTADO DE LOS ÚLTIMOS TESTS:
 <img src='https://img.shields.io/badge/test-failure-reds' />
 
