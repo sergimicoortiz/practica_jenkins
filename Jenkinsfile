@@ -24,22 +24,37 @@ pipeline {
         }
         stage('Node install') {
             steps {
-                sh 'npm install -D'
+                script {
+                    env.R_INSTALL = sh(script:'npm install -D', returnStatus: true)
+                }
             }
         }
         stage('Linter') {
             steps {
-                sh 'npm run lint'
+                script {
+                    env.R_LINTER = sh(script:'npm run lint', returnStatus: true)
+                }
             }
         }
         stage('Test') {
             steps {
-                sh 'npm run test'
+                script {
+                    env.R_TEST = sh(script:'npm run test', returnStatus: true)
+                }
             }
         }
         stage('Build') {
             steps {
-                sh 'npm run build'
+                script {
+                    env.R_BUILD = sh(script:'npm run build', returnStatus: true)
+                }
+            }
+        }
+        stage('Update_Readme') {
+            steps {
+                script {
+                    env.R_README = sh(script:"node ./jenkinsScripts/UpdateReadme.js ${env.R_TEST}", returnStatus: true)
+                }
             }
         }
     }

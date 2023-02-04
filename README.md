@@ -76,6 +76,7 @@ He modificado el Jenkinsfile
 He modificado el Jenkinsfile
 
 <img src='./img/Captura de pantalla 2023-02-04 152015.png' />
+<img src='./img/Captura de pantalla 2023-02-04 152155.png' />
 
 # Update_Readme
 
