@@ -69,3 +69,15 @@ Para poder utilizar jest con imports he tenido que instalar babel y realizar alg
 He modificado el Jenkinsfile
 
 <img src='./img/Screenshot_20230203_185451.png' />
+<img src='./img/Captura de pantalla 2023-02-04 151443.png' />
+
+# Build
+
+He modificado el Jenkinsfile
+
+<img src='./img/Captura de pantalla 2023-02-04 152015.png' />
+
+# Update_Readme
+
+### RESULTADO DE LOS ÚLTIMOS TESTS:
+<img src='https://img.shields.io/badge/test-failure-reds' />
