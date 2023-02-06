@@ -60,7 +60,7 @@ pipeline {
         stage('Push_Changes') {
             steps {
                     script {
-                    sshagent(credentials: ['sergimicoortiz']) {
+                    sshagent(credentials: ['1']) {
                         env.R_PUSH = sh(script:"sh ./jenkinsScripts/PushChanges.sh ${env.EJECUTOR} ${env.MOTIVO}", returnStatus: true)
                     }
                     }
