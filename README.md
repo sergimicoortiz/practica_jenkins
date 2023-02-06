@@ -88,7 +88,7 @@ Script que realiza los cambios en el README
 <img src='./img/Captura de pantalla 2023-02-04 164016.png' />
 
 ### RESULTADO DE LOS ÚLTIMOS TESTS:
-<img src='https://img.shields.io/badge/test-failure-reds' />
+<img src='https://img.shields.io/badge/tested%20with-Jest-04C38E.svgs' />
 
 
 # Push_Changes
