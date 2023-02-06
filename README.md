@@ -1,3 +1,6 @@
+# Introducción teorica
+
+Jenkins ayuda en la automatización de parte del proceso de desarrollo de software mediante integración continua y facilita ciertos aspectos de la entrega continua. Admite herramientas de control de versiones como CVS, Subversion, Git, Mercurial, Perforce y Clearcase y puede ejecutar proyectos basados en Apache Ant y Apache Maven.
 # Creación de la tarea
 
 He creado la tarea en jenkins
@@ -93,5 +96,13 @@ Script que realiza los cambios en el README
 
 # Push_Changes
 
-He modificado el Jenkinsfile
-<img src='./img/Captura de pantalla 2023-02-04 163621.png' />
+He instalado la extención ssh agent la cual me permite utilizar las claves ssh que tengo en jenkins como credencialies en un script que realiza el commit
+<img src='./img/Screenshot_20230206_195408.png' />
+
+Script:
+<img src='./img/Screenshot_20230206_195418.png' />
+
+He modificado el Jenkinsfile, en el apartado de sshagent en la credencial es la ID de la credencial y no el nombre.
+<img src='./img/Screenshot_20230206_195433.png' />
+<img src='./img/Screenshot_20230206_195655.png' />
+<img src='./img/Screenshot_20230206_200100.png' />
