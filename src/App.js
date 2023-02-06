@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import { get_pokemon_name } from './utils/utils';
 import './App.css';
 
 function App() {
+  const [name, setName] = useState('');
+  const [id, setId] = useState('');
+  const handleChange = (data) => {
+    setId(data.target.value);
+  }
+
+  useEffect(() => {
+    get_pokemon_name(id)
+    .then(data=>{
+      setName(data);
+    })
+  }, [id]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input type='number' onChange={handleChange}  min={1} max={200} />
+      <p>{name}</p>
     </div>
   );
 }
