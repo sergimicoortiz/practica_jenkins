@@ -70,7 +70,9 @@ pipeline {
             steps {
                 script {
                     if (env.R_INSTALL == '0' && env.R_LINTER == '0' && env.R_TEST == '0' && env.R_BUILD == '0' && env.R_README == '0' && env.R_PUSH == '0') {
-                        env.R_README = sh(script:"sh ./jenkinsScripts/Vercel.sh", returnStatus: true)
+                        withCredentials([string(credentialsId: 'VERCEL_TOKEN', variable: 'token'), string(credentialsId: 'VERCEL_PROYECT    ', variable: 'proyect')]) {
+                            env.R_README = sh(script:"sh ./jenkinsScripts/Vercel.sh ${token} ${proyect}", returnStatus: true)
+                        }
                     }
                     else {
                         env.R_README = '1'
