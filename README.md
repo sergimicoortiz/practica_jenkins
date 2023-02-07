@@ -110,3 +110,15 @@ He modificado el Jenkinsfile, en el apartado de sshagent en la credencial es la 
 # Deploy to Vercel
 
 ### Web URL: https://practicajenkins-sergimicoortiz.vercel.app/  
+
+He creado una proyecto en vercel, el cual utilizo en el script junto a un token. Ambos estan como credenciales en jenkins.
+<img src='./img/Screenshot_20230207_193442.png' />
+<img src='./img/Screenshot_20230207_191356.png' />
+<img src='./img/Screenshot_20230207_191434.png' />
+
+Script de bash:
+<img src='./img/Screenshot_20230207_193238.png' />
+
+Jenkinsfile:
+<img src='./img/Screenshot_20230207_193317.png' />
+<img src='./img/Screenshot_20230207_193219.png' />
