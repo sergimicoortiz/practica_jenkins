@@ -3,7 +3,7 @@
 Jenkins ayuda en la automatización de parte del proceso de desarrollo de software mediante integración continua y facilita ciertos aspectos de la entrega continua. Admite herramientas de control de versiones como CVS, Subversion, Git, Mercurial, Perforce y Clearcase y puede ejecutar proyectos basados en Apache Ant y Apache Maven.
 # Creación de la tarea
 
-He creado la tarea en jenkins
+He creado la tarea en jenkins.
 
 <img src='./img/Screenshot_20230203_175009.png' />
 
@@ -35,7 +35,7 @@ He creado la vista indicandole el job el cual debe de monitorizar.
 
 # Linter
 
-Para poder utilizar eslint he instalado y configuradl el plugin de nodejs. De esta forma se ouede utilizar node como tool en el jenkinsfile
+Para poder utilizar eslint he instalado y configuradl el plugin de nodejs. De esta forma se puede utilizar node como tool en el jenkinsfile.
 
 <img src='./img/Screenshot_20230203_184105.png' />
 
@@ -43,7 +43,7 @@ He configurado el eslint
 
 <img src='./img/Screenshot_20230203_183824.png' />
 
-Comando que ejecuta es eslint.
+Comando que ejecuta el eslint.
 
 <img src='./img/Screenshot_20230203_183844.png' />
 
@@ -69,40 +69,45 @@ Para poder utilizar jest con imports he tenido que instalar babel y realizar alg
 
 <img src='./img/Captura de pantalla 2023-02-04 150900.png' />
 
-He modificado el Jenkinsfile
+He modificado el Jenkinsfile.
 
 <img src='./img/Screenshot_20230203_185451.png' />
 <img src='./img/Captura de pantalla 2023-02-04 151443.png' />
 
 # Build
 
-He modificado el Jenkinsfile
+He modificado el Jenkinsfile.
 
 <img src='./img/Captura de pantalla 2023-02-04 152015.png' />
 <img src='./img/Captura de pantalla 2023-02-04 152155.png' />
 
 # Update_Readme
 
-He modificado el Jenkinsfile
+He modificado el Jenkinsfile.
+
 <img src='./img/Captura de pantalla 2023-02-04 163615.png' />
 <img src='./img/Captura de pantalla 2023-02-04 163505.png' />
 
-Script que realiza los cambios en el README
+Script que realiza los cambios en el README.
+
 <img src='./img/Captura de pantalla 2023-02-04 164016.png' />
 
 ### RESULTADO DE LOS ÚLTIMOS TESTS:
+
 <img src='https://img.shields.io/badge/tested%20with-Jest-04C38E.svgs' />
 
 
 # Push_Changes
 
-He instalado la extención ssh agent la cual me permite utilizar las claves ssh que tengo en jenkins como credencialies en un script que realiza el commit
+He instalado la extención ssh agent la cual me permite utilizar las claves ssh que tengo en jenkins como credencialies en el script que realiza el commit.
+
 <img src='./img/Screenshot_20230206_195408.png' />
 
 Script:
 <img src='./img/Screenshot_20230206_195418.png' />
 
 He modificado el Jenkinsfile, en el apartado de sshagent en la credencial es la ID de la credencial y no el nombre.
+
 <img src='./img/Screenshot_20230206_195433.png' />
 <img src='./img/Screenshot_20230206_195655.png' />
 <img src='./img/Screenshot_20230206_200100.png' />
@@ -112,11 +117,13 @@ He modificado el Jenkinsfile, en el apartado de sshagent en la credencial es la 
 ### Web URL: https://practicajenkins-sergimicoortiz.vercel.app/  
 
 He creado una proyecto en vercel, el cual utilizo en el script junto a un token. Ambos estan como credenciales en jenkins.
+
 <img src='./img/Screenshot_20230207_193442.png' />
 <img src='./img/Screenshot_20230207_191356.png' />
 <img src='./img/Screenshot_20230207_191434.png' />
 
 Script de bash:
+
 <img src='./img/Screenshot_20230207_193238.png' />
 
 Jenkinsfile:
@@ -126,12 +133,15 @@ Jenkinsfile:
 # Notificación
 
 He añadido las credenciales de mailtrap a jenkins, el cual he usado en el script de js.
+
 <img src='./img/Screenshot_20230207_194742.png' />
 
 Script:
+
 <img src='./img/carbon.png' />
 
 Jenkinsfile:
+
 <img src='./img/Screenshot_20230207_195600.png' />
 <img src='./img/Screenshot_20230207_195918.png' />
 <img src='./img/Screenshot_20230207_195932.png' />
