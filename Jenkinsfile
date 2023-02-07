@@ -80,5 +80,14 @@ pipeline {
                 }
             }
         }
+        stage('Notificación') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'MAILTRAP', passwordVariable: 'pass', usernameVariable: 'user')]) {
+                        env.R_BUILD = sh(script:"node ./jenkinsScripts/Email.js ${user} ${pass} ${env.CORREO}", returnStatus: true)
+                    }
+                }
+            }
+        }
     }
 }
