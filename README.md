@@ -122,3 +122,16 @@ Script de bash:
 Jenkinsfile:
 <img src='./img/Screenshot_20230207_193317.png' />
 <img src='./img/Screenshot_20230207_193219.png' />
+
+# Notificación
+
+He añadido las credenciales de mailtrap a jenkins, el cual he usado en el script de js.
+<img src='./img/Screenshot_20230207_194742.png' />
+
+Script:
+<img src='./img/carbon.png' />
+
+Jenkinsfile:
+<img src='./img/Screenshot_20230207_195600.png' />
+<img src='./img/Screenshot_20230207_195918.png' />
+<img src='./img/Screenshot_20230207_195932.png' />
