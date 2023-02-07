@@ -1,4 +1,4 @@
-# Introducción teorica
+# Introducción teórica
 
 Jenkins ayuda en la automatización de parte del proceso de desarrollo de software mediante integración continua y facilita ciertos aspectos de la entrega continua. Admite herramientas de control de versiones como CVS, Subversion, Git, Mercurial, Perforce y Clearcase y puede ejecutar proyectos basados en Apache Ant y Apache Maven.
 # Creación de la tarea
@@ -27,7 +27,7 @@ He instalado el plugin.
 
 <img src='./img/Screenshot_20230203_182953.png' />
 
-He creado la vista indicandole el job el cual debe de monitorizar.
+He creado la vista indicándole el job el cual debe de monitorizar.
 
 <img src='./img/Screenshot_20230203_183455.png' />
 <img src='./img/Screenshot_20230203_183523.png' />
@@ -59,7 +59,7 @@ He creado los tests de jest.
 <img src='./img/Captura de pantalla 2023-02-04 150535.png' />
 <img src='./img/Captura de pantalla 2023-02-04 150549.png' />
 
-Para poder utilizar jest con imports he tenido que instalar babel y realizar algunas configuraciónes.
+Para poder utilizar jest con imports he tenido que instalar babel y realizar algunas configuraciones.
 
 **package.json**
 
@@ -99,7 +99,7 @@ Script que realiza los cambios en el README.
 
 # Push_Changes
 
-He instalado la extención ssh agent la cual me permite utilizar las claves ssh que tengo en jenkins como credencialies en el script que realiza el commit.
+He instalado la extensión ssh agent la cual me permite utilizar las claves ssh que tengo en jenkins como credenciales en el script que realiza el commit.
 
 <img src='./img/Screenshot_20230206_195408.png' />
 
