@@ -71,11 +71,11 @@ pipeline {
                 script {
                     if (env.R_INSTALL == '0' && env.R_LINTER == '0' && env.R_TEST == '0' && env.R_BUILD == '0' && env.R_README == '0' && env.R_PUSH == '0') {
                         withCredentials([string(credentialsId: 'VERCEL_TOKEN', variable: 'token'), string(credentialsId: 'VERCEL_PROYECT    ', variable: 'proyect')]) {
-                            env.R_README = sh(script:"sh ./jenkinsScripts/Vercel.sh ${token} ${proyect}", returnStatus: true)
+                            env.R_DEPLOY = sh(script:"sh ./jenkinsScripts/Vercel.sh ${token} ${proyect}", returnStatus: true)
                         }
                     }
                     else {
-                        env.R_README = '1'
+                        env.R_DEPLOY = '1'
                     }
                 }
             }
@@ -84,7 +84,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'MAILTRAP', passwordVariable: 'pass', usernameVariable: 'user')]) {
-                        env.R_BUILD = sh(script:"node ./jenkinsScripts/Email.js ${user} ${pass} ${env.CORREO}", returnStatus: true)
+                        env.R_BUILD = sh(script:"node ./jenkinsScripts/Email.js ${user} ${pass} ${env.CORREO} ${env.R_LINTER} ${env.R_TEST} ${env.R_README} ${env.R_DEPLOY}", returnStatus: true)
                     }
                 }
             }
