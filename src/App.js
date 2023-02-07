@@ -11,14 +11,15 @@ function App() {
 
   useEffect(() => {
     get_pokemon_name(id)
-    .then(data=>{
-      setName(data);
-    })
+      .then(data => {
+        setName(data);
+      })
   }, [id]);
 
   return (
     <div className="App">
-      <input type='number' onChange={handleChange}  min={1} max={200} />
+      <h1>VERCEL TEST 1</h1>
+      <input type='number' onChange={handleChange} min={1} max={200} />
       <p>{name}</p>
     </div>
   );

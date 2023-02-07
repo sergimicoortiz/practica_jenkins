@@ -66,5 +66,17 @@ pipeline {
                     }
             }
         }
+        stage('Deploy to Vercel') {
+            steps {
+                script {
+                    if (env.R_INSTALL == '0' && env.R_LINTER == '0' && env.R_TEST == '0' && env.R_BUILD == '0' && env.R_README == '0' && env.R_PUSH == '0') {
+                        env.R_README = sh(script:"sh ./jenkinsScripts/Vercel.sh", returnStatus: true)
+                    }
+                    else {
+                        env.R_README = '1'
+                    }
+                }
+            }
+        }
     }
 }
