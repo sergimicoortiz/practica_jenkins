@@ -4,7 +4,7 @@ async function main() {
     try {
         const RESULTS = process.argv[2];
         const README_PATH = './README.md';
-        const OK_URL = 'https://img.shields.io/badge/tested%20with-Jest-04C38E.svg';
+        const OK_URL = 'https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg';
         const BAD_URL = 'https://img.shields.io/badge/test-failure-red';
         const URL = RESULTS == 0 ? OK_URL : BAD_URL;
         const README_DATA = await fs.readFile(README_PATH, 'utf-8');

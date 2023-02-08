@@ -94,7 +94,7 @@ Script que realiza los cambios en el README.
 
 ### RESULTADO DE LOS ÚLTIMOS TESTS:
 
-<img src='https://img.shields.io/badge/tested%20with-Jest-04C38E.svgs' />
+<img src='https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg' />
 
 
 # Push_Changes
